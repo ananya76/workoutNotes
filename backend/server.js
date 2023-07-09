@@ -14,6 +14,8 @@ app.use((req, res, next)=>{
     next();
 })
 
+
+
 //routes
 app.use("/api/workouts", workoutRoutes);
 app.use("/api/user", userRoutes);
