@@ -1,8 +1,8 @@
 require("dotenv").config();
-import cors from "cors";
 
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require('cors');
 const workoutRoutes = require("./routes/workouts");
 const userRoutes = require("./routes/user");
 
