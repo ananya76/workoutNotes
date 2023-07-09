@@ -1,12 +1,16 @@
 require("dotenv").config();
+import cors from "cors";
 
 const express = require("express");
 const mongoose = require("mongoose");
 const workoutRoutes = require("./routes/workouts");
 const userRoutes = require("./routes/user");
+
 //express app
 const app = express();
 
+//cors
+app.use(cors());
 //middleware
 app.use(express.json());
 app.use((req, res, next)=>{
